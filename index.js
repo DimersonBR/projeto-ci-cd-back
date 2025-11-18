@@ -3,7 +3,7 @@ const cors = require('cors');
 
 const app = express();
 
-// Configuração CORS corrigida
+// Configuração CORS corrigida,
 const allowedOrigin = process.env.FRONT_URL || 'https://projeto-ci-cd-front-beryl.vercel.app';
 
 app.use(cors({

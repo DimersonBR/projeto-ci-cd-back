@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Instalar dependências (dev não necessárias para build Docker)
-        run: npm ci
+ #     - name: Instalar dependências (dev não necessárias para build Docker)
+ #       run: npm ci
 
       - name: Build e teste (opcional)
         run: |

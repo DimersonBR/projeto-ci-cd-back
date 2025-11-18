@@ -11,7 +11,7 @@ API simples Node + Express para demonstração de CI/CD com Render e GitHub Acti
 
 ## Deploy
 - Deploy automático via GitHub Actions quando uma tag SemVer é criada (ex: `v1.0.0`).
-- Repositório configurado para criar deploy no Render via API.
+- Repositório configurado para criar deploy no Render via API
 
 ## Endpoints
 `GET /` -> `{ "mensagem": "API online e integrada com CI/CD!" }`
