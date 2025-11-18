@@ -20,8 +20,8 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.json({ 
         mensagem: "API online e integrada com CI/CD!",
-        timestamp: new Date().toISOString(),
-        versao: "1.0.0"
+        // timestamp: new Date().toISOString(), trazer a data atual
+        // versao: "1.0.0", trazer a versão da API
     });
 });
 
@@ -40,7 +40,7 @@ app.get('/info', (req, res) => {
         projeto: "CI/CD Backend",
         descricao: "API para integração com frontend",
         ambiente: process.env.NODE_ENV || 'development',
-        porta: process.env.PORT || 3000
+        porta: process.env.PORT || 5500
     });
 });
 
@@ -61,7 +61,7 @@ app.use((error, req, res, next) => {
     });
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5500;
 app.listen(port, () => {
     console.log(`🚀 API rodando na porta ${port}`);
     console.log(`📍 URL: http://localhost:${port}`);
