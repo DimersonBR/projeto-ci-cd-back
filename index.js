@@ -19,7 +19,7 @@ app.use(express.json());
 // Rota principal
 app.get('/', (req, res) => {
     res.json({ 
-        mensagem: "API online e integrada com CI/CD!",
+        mensagem: "API online ??? e integrada com CI/CD!",
         // timestamp: new Date().toISOString(), trazer a data atual
         // versao: "1.0.0", trazer a versão da API
     });
