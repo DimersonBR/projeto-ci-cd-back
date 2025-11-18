@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   res.json({ mensagem: "API online e integrada com CI/CD!" });
 });
 
-const port = process.env.PORT || 10000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`API rodando na porta ${port}`);
 });
