@@ -3,8 +3,8 @@ const cors = require('cors');
 
 const app = express();
 
-// Permitir o front (substitua pela URL do front na Vercel)
-const allowedOrigin = process.env.FRONT_URL || 'https://seu-front.vercel.app';
+// Permitir o front (URL do front na Vercel)
+const allowedOrigin = process.env.FRONT_URL || 'https://projeto-ci-cd-front-beryl.vercel.app/';
 app.use(cors({ origin: allowedOrigin }));
 
 app.get('/', (req, res) => {
